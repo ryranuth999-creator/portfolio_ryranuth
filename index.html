@@ -1,546 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Professional portfolio for Ry Ranuth, an IT Support and Network Engineer based in Phnom Penh, Cambodia."
-    />
-    <title>Ry Ranuth | IT Support & Network Engineer</title>
 
-    <!-- Google Fonts and Font Awesome icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Professional portfolio of Ry Ranuth - IT Support, Network Engineer, and System Administrator based in Phnom Penh, Cambodia." />
+  <title>Ry Ranuth | IT Support & Network Engineer</title>
 
-    <link rel="stylesheet" href="css/style.css?v=portfolio-ui-15" />
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
-  </head>
-  <body>
-    <!-- Header and main navigation -->
-    <header class="site-header" id="top">
-      <nav class="navbar" aria-label="Primary navigation">
-        <a class="logo" href="#home" aria-label="Ry Ranuth home">
-          <span class="logo-mark">RR</span>
-          <span>Ry Ranuth</span>
-        </a>
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-expanded="false"
-        >
-          <span class="menu-bars" aria-hidden="true"></span>
-        </button>
+  <link rel="stylesheet" href="css/style.css?v=jc-style-v1" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+</head>
 
-        <ul class="nav-links">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a class="logo" href="#home" aria-label="Ry Ranuth home">
+        <span class="logo-name">Ry <span class="logo-accent">Ranuth</span></span>
+        <span class="logo-role">IT SUPPORT & NETWORK ENGINEER</span>
+      </a>
 
-        <div class="nav-actions">
-          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">
-            <i class="fa-solid fa-sun"></i>
-            <span>Light</span>
-          </button>
-          <a class="nav-cta" href="#contact">
-            Hire Me
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-          </a>
-        </div>
-      </nav>
-    </header>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="menu-bars" aria-hidden="true"></span>
+      </button>
 
-    <main>
-      <!-- Hero section -->
-      <section class="hero section" id="home">
-        <div class="hero-bg-grid" aria-hidden="true"></div>
-        <div class="container hero-content">
-          <div class="hero-copy reveal visible">
-            <p class="eyebrow">
-              <i class="fa-solid fa-network-wired"></i>
-              I'm an IT professional
-            </p>
-            <h1>Hi, I'm <span>Ry Ranuth</span></h1>
-            <h2>IT Support | Network Engineer | System Administrator</h2>
-            <p class="typing-line">
-              I focus on <span id="typingText">IT Support</span>
-              <span class="typing-cursor" aria-hidden="true"></span>
-            </p>
-            <p class="hero-description">
-              I am an IT professional and networking enthusiast focused on
-              network infrastructure, IT support, system administration,
-              cybersecurity, and troubleshooting.
-            </p>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="certificates.html" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
 
-            <div class="hero-actions" aria-label="Primary actions">
-              <a class="btn btn-primary" href="#skills">
-                <i class="fa-solid fa-network-wired"></i>
-                View Skills
-              </a>
-              <a class="btn btn-secondary" href="#" id="downloadCv">
-                <i class="fa-solid fa-file-arrow-down"></i>
-                Download CV
-              </a>
-              <a class="btn btn-ghost" href="#contact">
-                <i class="fa-solid fa-paper-plane"></i>
-                Contact Me
-              </a>
-            </div>
+      <div class="nav-actions">
+        <a class="btn-hire" href="#contact">Hire Me</a>
+      </div>
+    </nav>
+  </header>
 
-            <div class="social-links" aria-label="Social links">
-              <a href="https://github.com/ryranuth999" target="_blank" rel="noopener" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-                <span class="icon-fallback">GH</span>
-              </a>
-              <a href="https://www.linkedin.com/in/ryranuth" target="_blank" rel="noopener" aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-                <span class="icon-fallback">IN</span>
-              </a>
-              <a href="https://t.me/ryranuth" target="_blank" rel="noopener" aria-label="Telegram">
-                <i class="fa-brands fa-telegram"></i>
-                <span class="icon-fallback">TG</span>
-              </a>
-              <a href="mailto:ryranuth999@gmail.com" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-                <span class="icon-fallback">@</span>
-              </a>
-            </div>
+  <main>
+    <!-- Hero Section (Alpine Lake Scenic Background) -->
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content reveal visible">
+          <span class="hero-badge">Hello, I'm</span>
+          <h1 class="hero-name">Ry Ranuth</h1>
+          <h2 class="hero-title">
+            <span id="typingText">IT Support & Network Engineer</span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </h2>
+          <p class="hero-bio">
+            I build reliable network infrastructure, configure secure enterprise systems, and provide practical IT
+            support for businesses in Cambodia and worldwide.
+          </p>
 
-            <div class="hero-tech">
-              <span>Technologies I work with</span>
-              <div>
-                <i class="fa-solid fa-network-wired" title="Network Infrastructure"></i>
-                <i class="fa-solid fa-server" title="Server Administration"></i>
-                <i class="fa-solid fa-route" title="Routing"></i>
-                <i class="fa-solid fa-sitemap" title="VLAN and Switching"></i>
-                <i class="fa-solid fa-shield-halved" title="Firewall and Security"></i>
-                <i class="fa-solid fa-wifi" title="Wireless and VPN"></i>
-                <i class="fa-solid fa-terminal" title="Linux and SSH"></i>
-                <i class="fa-solid fa-database" title="DNS, DHCP, and Services"></i>
-              </div>
-            </div>
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              View My Work <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-envelope"></i> Contact Me
+            </a>
           </div>
 
-          <div class="hero-visual reveal visible">
-            <div class="portrait-stage">
-              <div class="dot-pattern" aria-hidden="true"></div>
-              <div class="portrait-orbit" aria-hidden="true"></div>
-              <div class="portrait-frame">
-                <img
-                  src="assets/images/profile.jpg"
-                  alt="Professional portrait of Ry Ranuth"
-                />
-              </div>
-              <div class="code-card" aria-label="Professional profile code card">
-                <div class="code-header">
-                  <span><i class="fa-solid fa-code"></i> Profile</span>
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <pre><code>const engineer = {
-  name: "Ry Ranuth",
-  focus: "Network Support",
-  skills: ["Cisco", "Linux", "Server"],
-  status: "Open to IT opportunities"
-};</code></pre>
-              </div>
-              <div class="status-panel" aria-label="Network status summary">
-                <span><i class="fa-solid fa-shield-halved"></i> Secure</span>
-                <span><i class="fa-solid fa-signal"></i> Online</span>
-                <span><i class="fa-solid fa-route"></i> Routed</span>
-              </div>
+          <div class="hero-trusted">
+            <p class="trusted-label">Core Technologies & Systems</p>
+            <div class="trusted-tech-row">
+              <div class="tech-item"><i class="fa-solid fa-network-wired"></i> Cisco</div>
+              <div class="tech-item"><i class="fa-brands fa-linux"></i> Linux</div>
+              <div class="tech-item"><i class="fa-brands fa-windows"></i> Windows Server</div>
+              <div class="tech-item"><i class="fa-solid fa-server"></i> VMware</div>
+              <div class="tech-item"><i class="fa-solid fa-shield-halved"></i> Security</div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- About section -->
-      <section class="section" id="about">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">About Me</p>
-            <h2>Practical IT Knowledge With Network-Focused Training</h2>
-            <p>
-              I am studying Information Technology and building practical
-              experience in networking, system administration, IT support,
-              Linux, Windows Server, and cybersecurity.
-            </p>
+        <div class="hero-visual reveal visible">
+          <div class="portrait-wrapper">
+            <img src="assets/images/profile.jpg" alt="Ry Ranuth - IT Support & Network Engineer" class="portrait-img" />
+            <div class="status-floating-pill">
+              <span class="status-dot"></span>
+              <span>Available for IT Opportunities</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="about-grid">
-            <article class="about-text reveal">
-              <p class="eyebrow">About Me</p>
-              <h3>I'm passionate about reliable IT support and network infrastructure.</h3>
-              <p>
-                My work focuses on understanding how business networks are
-                built, secured, documented, and supported. I enjoy configuring
-                routers and switches, troubleshooting client systems, working
-                with Linux and Windows Server, and creating lab environments
-                that turn theory into hands-on skill.
-              </p>
-              <p>
-                I also have experience teaching IT networking concepts and
-                computer troubleshooting, helping students understand hardware,
-                software, operating systems, network fundamentals, and practical
-                Cisco lab scenarios.
-              </p>
-            </article>
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left reveal">
+            <span class="section-kicker">ABOUT ME</span>
+            <h2 class="section-headline">Building Solutions That Make an Impact</h2>
+            <p class="about-narrative">
+              I am a dedicated IT Support specialist and Network Engineer based in Phnom Penh, Cambodia. I specialize in
+              building scalable network topologies, configuring Cisco routers and switches, managing Windows Server and
+              Linux environments, and troubleshooting complex hardware and software issues.
+            </p>
+            <p class="about-narrative">
+              Alongside system administration and networking, I serve as an IT Networking Instructor at ETEC Center,
+              sharing hands-on knowledge in computer hardware, operating systems, and real-world Cisco network labs.
+            </p>
 
-            <div class="info-cards">
-              <article class="info-card reveal">
-                <i class="fa-solid fa-location-dot"></i>
-                <div>
-                  <span>Location</span>
-                  <strong>Phnom Penh, Cambodia</strong>
+            <div class="highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <div class="highlight-text">
+                  <strong>IT Instructor</strong>
+                  <span>ETEC Center (2025 - Present)</span>
                 </div>
-              </article>
-              <article class="info-card reveal">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <div>
-                  <span>Field</span>
-                  <strong>Information Technology</strong>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="highlight-text">
+                  <strong>Available for Roles</strong>
+                  <span>Support / Network / SysAdmin</span>
                 </div>
-              </article>
-              <article class="info-card reveal">
-                <i class="fa-solid fa-server"></i>
-                <div>
-                  <span>Focus</span>
-                  <strong>Network Engineering & IT Support</strong>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <div class="highlight-text">
+                  <strong>40+ Technical Skills</strong>
+                  <span>Networking, Servers & Labs</span>
                 </div>
-              </article>
-              <article class="info-card reveal">
-                <i class="fa-solid fa-briefcase"></i>
-                <div>
-                  <span>Availability</span>
-                  <strong>Open to IT opportunities</strong>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="highlight-text">
+                  <strong>Phnom Penh</strong>
+                  <span>Cambodia</span>
                 </div>
-              </article>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#" id="downloadCv" class="btn btn-primary">
+                Download CV <i class="fa-solid fa-download"></i>
+              </a>
             </div>
           </div>
 
-          <div class="stats-grid">
-            <article class="stat-card reveal">
-              <i class="fa-solid fa-chalkboard-user"></i>
-              <strong>2025+</strong>
-              <span>Teaching IT Networking</span>
-            </article>
-            <article class="stat-card reveal">
-              <i class="fa-solid fa-diagram-project"></i>
-              <strong>6</strong>
-              <span>Hands-on Labs</span>
-            </article>
-            <article class="stat-card reveal">
-              <i class="fa-solid fa-toolbox"></i>
-              <strong>40+</strong>
-              <span>Technical Skills</span>
-            </article>
-            <article class="stat-card reveal">
-              <i class="fa-solid fa-briefcase"></i>
-              <strong>Open</strong>
-              <span>To IT Opportunities</span>
-            </article>
+          <div class="about-right reveal">
+            <div class="info-card-box">
+              <div class="info-card-row">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Location</span>
+                  <span class="info-val">Phnom Penh, Cambodia</span>
+                </div>
+              </div>
+
+              <div class="info-card-row">
+                <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Email</span>
+                  <a href="mailto:ryranuth999@gmail.com" class="info-val info-link">ryranuth999@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-card-row">
+                <div class="info-icon"><i class="fa-brands fa-telegram"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Telegram</span>
+                  <a href="https://t.me/ryranuth" target="_blank" rel="noopener"
+                    class="info-val info-link">@ryranuth</a>
+                </div>
+              </div>
+
+              <div class="info-card-row">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Education</span>
+                  <span class="info-val">Bachelor of IT (NTTI)</span>
+                </div>
+              </div>
+
+              <div class="info-card-row">
+                <div class="info-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Certification</span>
+                  <span class="info-val">Cisco CCNA (In Progress)</span>
+                </div>
+              </div>
+
+              <div class="info-card-row">
+                <div class="info-icon"><i class="fa-solid fa-language"></i></div>
+                <div class="info-content">
+                  <span class="info-label">Languages</span>
+                  <span class="info-val">Khmer (Native), English (Technical)</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Skills section -->
-      <section class="section section-alt" id="skills">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Skills</p>
-            <h2>Technical Skill Set</h2>
-            <p>
-              Networking, system administration, virtualization, and development
-              tools used in realistic support and infrastructure labs.
+    <!-- Services / What I Can Do For You Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-center-header reveal">
+          <span class="section-kicker">MY SERVICES</span>
+          <h2 class="section-headline">What I Can Do For You</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3 class="service-title">Network Infrastructure</h3>
+            <p class="service-desc">
+              Designing, configuring, and maintaining enterprise networks with Cisco routers and switches, VLANs, OSPF,
+              NAT, ACLs, STP, and DHCP.
             </p>
           </div>
 
-          <div class="skills-grid">
-            <article class="skill-category reveal">
-              <div class="category-header">
-                <i class="fa-solid fa-network-wired"></i>
-                <div>
-                  <h3>Networking</h3>
-                  <div class="skill-meter"><span style="width: 92%"></span></div>
-                </div>
-              </div>
-              <div class="skill-tags">
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+            <h3 class="service-title">System Administration</h3>
+            <p class="service-desc">
+              Deploying and managing Windows Server, Active Directory DS, Group Policy (GPO), Linux (Ubuntu, CentOS),
+              SSH, DNS, and user access control.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3 class="service-title">Virtualization & Labs</h3>
+            <p class="service-desc">
+              Building and simulating realistic corporate topologies and multi-vendor labs using VMware, VirtualBox,
+              Cisco Packet Tracer, and GNS3.
+            </p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3 class="service-title">IT Support & Security</h3>
+            <p class="service-desc">
+              Hardware/software troubleshooting, cable diagnostics, network packet analysis with Wireshark, system
+              maintenance, and basic security hardening.
+            </p>
+          </div>
+        </div>
+
+        <!-- Comprehensive Skills Matrix -->
+        <div class="skills-matrix reveal">
+          <h3 class="matrix-title">Technical Competency Directory</h3>
+          <div class="matrix-grid">
+            <div class="matrix-column">
+              <h4><i class="fa-solid fa-network-wired"></i> Networking</h4>
+              <div class="tag-cloud">
                 <span>Cisco Networking</span><span>TCP/IP</span><span>IPv4 / IPv6</span>
                 <span>Subnetting</span><span>VLAN</span><span>Trunking</span>
                 <span>STP / RSTP</span><span>EtherChannel</span><span>Inter-VLAN Routing</span>
                 <span>Static Routing</span><span>OSPF</span><span>NAT / PAT</span>
-                <span>ACL</span><span>DHCP</span><span>DNS</span>
-                <span>VPN</span><span>Firewall</span>
+                <span>ACL</span><span>DHCP</span><span>DNS</span><span>VPN</span><span>Firewall</span>
               </div>
-            </article>
+            </div>
 
-            <article class="skill-category reveal">
-              <div class="category-header">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <div>
-                  <h3>Network Tools</h3>
-                  <div class="skill-meter"><span style="width: 88%"></span></div>
-                </div>
-              </div>
-              <div class="skill-tags">
+            <div class="matrix-column">
+              <h4><i class="fa-solid fa-screwdriver-wrench"></i> Network Tools</h4>
+              <div class="tag-cloud">
                 <span>Cisco Packet Tracer</span><span>EVE-NG</span><span>GNS3</span>
                 <span>PNETLab</span><span>Wireshark</span>
               </div>
-            </article>
+            </div>
 
-            <article class="skill-category reveal">
-              <div class="category-header">
-                <i class="fa-solid fa-gears"></i>
-                <div>
-                  <h3>System Administration</h3>
-                  <div class="skill-meter"><span style="width: 86%"></span></div>
-                </div>
-              </div>
-              <div class="skill-tags">
+            <div class="matrix-column">
+              <h4><i class="fa-solid fa-gears"></i> System Administration</h4>
+              <div class="tag-cloud">
                 <span>Windows</span><span>Windows Server</span><span>Ubuntu</span>
                 <span>Zorin OS</span><span>Kali Linux</span><span>CentOS</span>
                 <span>Active Directory</span><span>DHCP Server</span><span>DNS Server</span>
                 <span>SSH</span><span>Samba</span>
               </div>
-            </article>
+            </div>
 
-            <article class="skill-category reveal">
-              <div class="category-header">
-                <i class="fa-solid fa-cubes"></i>
-                <div>
-                  <h3>Virtualization</h3>
-                  <div class="skill-meter"><span style="width: 82%"></span></div>
-                </div>
-              </div>
-              <div class="skill-tags">
+            <div class="matrix-column">
+              <h4><i class="fa-solid fa-cubes"></i> Virtualization & Dev</h4>
+              <div class="tag-cloud">
                 <span>VMware</span><span>VirtualBox</span><span>KVM/QEMU</span>
-              </div>
-            </article>
-
-            <article class="skill-category reveal">
-              <div class="category-header">
-                <i class="fa-solid fa-code"></i>
-                <div>
-                  <h3>Development</h3>
-                  <div class="skill-meter"><span style="width: 84%"></span></div>
-                </div>
-              </div>
-              <div class="skill-tags">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span>
-                <span>PHP</span><span>Laravel</span><span>MySQL</span>
-                <span>REST API</span><span>Git</span><span>GitHub</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience section -->
-      <section class="section" id="experience">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Experience</p>
-            <h2>Teaching, Support, and Lab Practice</h2>
-          </div>
-
-          <div class="timeline">
-            <article class="timeline-item reveal">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <div class="timeline-content">
-                <div class="timeline-top">
-                  <div>
-                    <h3>IT Networking Instructor</h3>
-                    <p>ETEC Center</p>
-                  </div>
-                  <span>2025 - Present</span>
-                </div>
-                <ul>
-                  <li>Teach computer hardware and software.</li>
-                  <li>Teach networking fundamentals and Cisco networking labs.</li>
-                  <li>Help students troubleshoot Windows and Linux systems.</li>
-                  <li>Create practical networking labs for real-world practice.</li>
-                  <li>Teach basic cybersecurity concepts.</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education and certifications section -->
-      <section class="section" id="education">
-        <div class="container education-layout">
-          <div class="education-column reveal">
-            <div class="section-heading align-left">
-              <p class="eyebrow">Education</p>
-              <h2>Academic Background</h2>
-            </div>
-            <article class="education-card">
-              <i class="fa-solid fa-building-columns"></i>
-              <div>
-                <h3>Bachelor of Information Technology</h3>
-                <p>NTTI</p>
-                <span>2024 - Present</span>
-              </div>
-            </article>
-          </div>
-
-          <div class="learning-column reveal">
-            <div class="section-heading align-left">
-              <p class="eyebrow">Currently Learning</p>
-              <h2>Growth Areas</h2>
-            </div>
-            <div class="learning-list">
-              <span>CCNA</span><span>Advanced Routing</span><span>Network Security</span>
-              <span>Firewall</span><span>VPN</span><span>Linux Administration</span>
-              <span>Cloud Networking</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="certifications">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Certifications</p>
-            <h2>Professional Development</h2>
-          </div>
-
-          <div class="cert-grid">
-            <article class="cert-card reveal">
-              <i class="fa-solid fa-certificate"></i>
-              <h3>Cisco CCNA</h3>
-              <p>In Progress</p>
-            </article>
-            <article class="cert-card reveal muted-card">
-              <i class="fa-solid fa-plus"></i>
-              <h3>Future Certification</h3>
-              <p>Ready to add more achievements.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact section -->
-      <section class="section" id="contact">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">Contact</p>
-            <h2>Let's Connect</h2>
-            <p>
-              Open to IT Support, Network Engineer, Junior System Administrator,
-              and Network Support opportunities.
-            </p>
-          </div>
-
-          <div class="contact-grid">
-            <div class="contact-details reveal">
-              <a class="contact-item" href="mailto:ryranuth999@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-                <strong>ryranuth999@gmail.com</strong>
-              </a>
-              <a class="contact-item" href="https://github.com/ryranuth" target="_blank" rel="noopener">
-                <i class="fa-brands fa-github"></i>
-                <span>GitHub</span>
-                <strong>github.com/ryranuth</strong>
-              </a>
-              <a class="contact-item" href="https://www.linkedin.com/in/ryranuth" target="_blank" rel="noopener">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-                <strong>linkedin.com/in/ryranuth</strong>
-              </a>
-              <a class="contact-item" href="https://t.me/ryranuth" target="_blank" rel="noopener">
-                <i class="fa-brands fa-telegram"></i>
-                <span>Telegram</span>
-                <strong>@ryranuth</strong>
-              </a>
-              <div class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Location</span>
-                <strong>Phnom Penh, Cambodia</strong>
+                <span>PHP</span><span>Laravel</span><span>MySQL</span><span>Git / GitHub</span>
               </div>
             </div>
-
-            <form class="contact-form reveal" id="contactForm" novalidate>
-              <div class="form-row">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" autocomplete="name" required />
-                <small class="error-message"></small>
-              </div>
-              <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" autocomplete="email" required />
-                <small class="error-message"></small>
-              </div>
-              <div class="form-row">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required />
-                <small class="error-message"></small>
-              </div>
-              <div class="form-row">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <small class="error-message"></small>
-              </div>
-              <fieldset class="delivery-options" aria-describedby="deliveryError">
-                <legend>Send Message To</legend>
-                <label class="delivery-option">
-                  <input type="checkbox" name="delivery[]" value="telegram" checked />
-                  <span class="delivery-icon"><i class="fa-brands fa-telegram"></i></span>
-                  <span>
-                    <strong>Telegram Group</strong>
-                    <small>Fast team notification</small>
-                  </span>
-                </label>
-                <label class="delivery-option">
-                  <input type="checkbox" name="delivery[]" value="email" checked />
-                  <span class="delivery-icon"><i class="fa-solid fa-envelope"></i></span>
-                  <span>
-                    <strong>Email</strong>
-                    <small>Send to ryranuth999@gmail.com</small>
-                  </span>
-                </label>
-                <small class="delivery-error" id="deliveryError"></small>
-              </fieldset>
-              <button class="btn btn-primary submit-btn" type="submit">
-                <i class="fa-solid fa-paper-plane"></i>
-                Send Message
-              </button>
-              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-            </form>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <p>&copy; <span id="year"></span> Ry Ranuth. All rights reserved.</p>
-        <a href="#home">Back to top</a>
       </div>
-    </footer>
+    </section>
 
-    <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
+    <!-- Featured Projects / Labs Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="projects-header reveal">
+          <div>
+            <span class="section-kicker">FEATURED PROJECTS</span>
+            <h2 class="section-headline">Hands-on Network & System Labs</h2>
+          </div>
+        </div>
 
-    <script src="js/script.js?v=portfolio-ui-15"></script>
-  </body>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview network-preview">
+              <div class="preview-overlay">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="preview-badge">Lab Project</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Enterprise Campus Network</h3>
+              <p class="project-desc">
+                Multi-VLAN enterprise infrastructure with redundant core and distribution switches, OSPF dynamic
+                routing, inter-VLAN routing, and ACL security policies.
+              </p>
+              <div class="project-tags">
+                <span>Cisco</span><span>OSPF</span><span>VLANs</span><span>DHCP</span><span>ACL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview server-preview">
+              <div class="preview-overlay">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <div class="preview-badge">Lab Project</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Windows Server & AD Lab</h3>
+              <p class="project-desc">
+                Centralized corporate domain infrastructure with Active Directory Domain Services, DNS, DHCP scopes,
+                Group Policy Objects (GPO), and user access controls.
+              </p>
+              <div class="project-tags">
+                <span>Active Directory</span><span>DNS</span><span>DHCP</span><span>GPO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-preview linux-preview">
+              <div class="preview-overlay">
+                <i class="fa-brands fa-linux"></i>
+              </div>
+              <div class="preview-badge">Lab Project</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Secure Linux Server Deployment</h3>
+              <p class="project-desc">
+                Hardened Ubuntu server installation featuring SSH key authentication, UFW firewall rules, Nginx web
+                hosting, Samba file sharing, and Wireshark traffic auditing.
+              </p>
+              <div class="project-tags">
+                <span>Ubuntu</span><span>SSH</span><span>Nginx</span><span>UFW</span><span>Samba</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="experience-section" id="experience">
+      <div class="container">
+        <div class="section-center-header reveal">
+          <span class="section-kicker">BACKGROUND & TRAINING</span>
+          <h2 class="section-headline">Experience & Education</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="exp-edu-grid">
+          <!-- Experience Column -->
+          <div class="exp-column reveal">
+            <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+            <div class="timeline-card">
+              <div class="card-badge">2025 - Present</div>
+              <h4 class="card-role">IT Networking Instructor</h4>
+              <p class="card-company">ETEC Center &bull; Phnom Penh, Cambodia</p>
+              <ul class="card-bullets">
+                <li>Teach computer hardware assembly, maintenance, and software installation.</li>
+                <li>Deliver hands-on instruction in networking fundamentals and Cisco router/switch labs.</li>
+                <li>Guide students in troubleshooting Windows and Linux operating systems.</li>
+                <li>Design practical lab topologies for real-world networking scenarios.</li>
+                <li>Introduce fundamental cybersecurity and defensive networking concepts.</li>
+              </ul>
+              <div class="card-award-tag">
+                <a href="certificates.html" class="award-link" title="View Certificate of Appreciation">
+                  <i class="fa-solid fa-award"></i> Awarded Certificate of Appreciation by ETEC Director <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Growth Column -->
+          <div class="edu-column reveal">
+            <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Education & Certifications</h3>
+
+            <div class="timeline-card">
+              <div class="card-badge">2024 - Present</div>
+              <h4 class="card-role">Bachelor of Information Technology</h4>
+              <p class="card-company">National Technical Training Institute (NTTI)</p>
+              <p class="card-desc">
+                Focused on network infrastructure, system architecture, database management, operating systems, and
+                computer engineering.
+              </p>
+            </div>
+
+            <!-- Unified Certifications Showcase Box with Small Logos & View Button -->
+            <div class="timeline-card cert-showcase-box">
+              <div class="cert-box-header">
+                <div class="cert-box-badge-row">
+                  <span class="card-badge verified"><i class="fa-solid fa-circle-check"></i> Verified Credentials</span>
+                </div>
+                <h4 class="card-role">Licenses & Certifications</h4>
+                <p class="card-company">Cisco Networking Academy &bull; ETEC Center &bull; Dragon ICT Academy</p>
+                <p class="card-desc">
+                  Accredited certifications in network defense, cybersecurity analysis, IT instruction, and routing.
+                </p>
+              </div>
+
+              <!-- Small Logo Certificate List -->
+              <div class="cert-mini-list">
+                <a href="certificates.html" class="cert-mini-item" title="View Certificate of Appreciation">
+                  <div class="cert-mini-thumb">
+                    <img src="assets/images/cert-etec-appreciation.png" alt="ETEC Center Certificate of Appreciation"
+                      loading="lazy" />
+                  </div>
+                  <div class="cert-mini-details">
+                    <span class="cert-mini-title">Certificate of Appreciation (Instructor)</span>
+                    <span class="cert-mini-meta"><i class="fa-solid fa-chalkboard-user"></i> ETEC Center &bull;
+                      Verified</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right cert-mini-arrow"></i>
+                </a>
+
+                <a href="certificates.html" class="cert-mini-item" title="View Cybersecurity Essentials Certificate">
+                  <div class="cert-mini-thumb">
+                    <img src="assets/images/cert-cybersecurity-essentials.png" alt="Cybersecurity Essentials"
+                      loading="lazy" />
+                  </div>
+                  <div class="cert-mini-details">
+                    <span class="cert-mini-title">Cybersecurity Essentials</span>
+                    <span class="cert-mini-meta"><i class="fa-solid fa-shield-halved"></i> Cisco Academy &bull;
+                      Verified</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right cert-mini-arrow"></i>
+                </a>
+
+                <a href="certificates.html" class="cert-mini-item"
+                  title="View Junior Cybersecurity Analyst Certificate">
+                  <div class="cert-mini-thumb">
+                    <img src="assets/images/cert-junior-cybersecurity-analyst.png" alt="Junior Cybersecurity Analyst"
+                      loading="lazy" />
+                  </div>
+                  <div class="cert-mini-details">
+                    <span class="cert-mini-title">Jr. Cybersecurity Analyst Career Path</span>
+                    <span class="cert-mini-meta"><i class="fa-solid fa-user-shield"></i> Cisco Academy &bull;
+                      Verified</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right cert-mini-arrow"></i>
+                </a>
+
+                <a href="certificates.html" class="cert-mini-item cert-mini-progress" title="View CCNA in Certificates">
+                  <div class="cert-mini-icon">
+                    <i class="fa-solid fa-network-wired"></i>
+                  </div>
+                  <div class="cert-mini-details">
+                    <span class="cert-mini-title">Cisco Certified Network Associate (CCNA)</span>
+                    <span class="cert-mini-meta"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right cert-mini-arrow"></i>
+                </a>
+              </div>
+
+              <!-- Button inside the box -->
+              <div class="cert-box-footer">
+                <a href="certificates.html" class="btn btn-primary cert-box-btn">
+                  <i class="fa-solid fa-certificate"></i> View All Certificates <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner ("Let's Work Together" - Cyber Network Mesh Background) -->
+    <section class="cta-banner-section" id="contact">
+      <div class="cta-overlay"></div>
+      <div class="container cta-container reveal">
+        <h2 class="cta-title">Let's Work Together</h2>
+        <p class="cta-subtitle">
+          Have an IT support or networking opportunity in mind? I'd love to hear about it. Let's create reliable,
+          secure, and efficient systems together.
+        </p>
+        <a href="https://t.me/ryranuth" target="_blank" rel="noopener" class="btn btn-primary btn-cta">
+          Get In Touch <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="contact-links-grid">
+          <a class="contact-card" href="mailto:ryranuth999@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <span class="cc-label">Email</span>
+              <strong class="cc-val">ryranuth999@gmail.com</strong>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://t.me/ryranuth" target="_blank" rel="noopener">
+            <i class="fa-brands fa-telegram"></i>
+            <div>
+              <span class="cc-label">Telegram</span>
+              <strong class="cc-val">@ryranuth</strong>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/ry-ranuth-b5676a414/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div>
+              <span class="cc-label">LinkedIn</span>
+              <strong class="cc-val">linkedin.com/in/ry-ranuth-b5676a414</strong>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://github.com/ryranuth999-creator" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+            <div>
+              <span class="cc-label">GitHub</span>
+              <strong class="cc-val">github.com/ryranuth999-creator</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-brand">
+        <span class="footer-logo">Ry <span class="logo-accent">Ranuth</span></span>
+        <span class="footer-sub">IT Support &bull; Network Engineer</span>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; <span id="year"></span> Ry Ranuth. All rights reserved.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/ry-ranuth-b5676a414/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ryranuth999-creator" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://t.me/ryranuth" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="mailto:ryranuth999@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js?v=jc-style-v1"></script>
+</body>
+
 </html>

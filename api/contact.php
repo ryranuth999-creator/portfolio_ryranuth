@@ -51,21 +51,15 @@ if (!is_array($delivery)) {
 
 $delivery = array_filter($delivery, 'is_string');
 $delivery = array_values(array_intersect(['telegram', 'email'], array_unique($delivery)));
+if (empty($delivery)) {
+    $delivery = ['telegram', 'email'];
+}
 
 if (strlen($name) < 2 || strlen($subject) < 3 || strlen($message) < 10 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(422);
     echo json_encode([
         'success' => false,
         'message' => 'Please complete the form with valid information.',
-    ]);
-    exit;
-}
-
-if (empty($delivery)) {
-    http_response_code(422);
-    echo json_encode([
-        'success' => false,
-        'message' => 'Please choose Telegram, Email, or both.',
     ]);
     exit;
 }

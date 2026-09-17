@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cyber-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050913" />
+      <stop offset="50%" stop-color="#081326" />
+      <stop offset="100%" stop-color="#040810" />
+    </linearGradient>
+
+    <!-- Radial Central Glow -->
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1d72f2" stop-opacity="0.22" />
+      <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#040810" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow-cyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur1" />
+      <feGaussianBlur stdDeviation="14" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-blue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Perspective Grid Pattern -->
+    <pattern id="cyber-grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#1d72f2" stroke-width="0.75" stroke-opacity="0.12" />
+      <circle cx="80" cy="0" r="1.5" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Line Gradients -->
+    <linearGradient id="link-grad-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.15" />
+    </linearGradient>
+
+    <linearGradient id="link-grad-right" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.15" />
+    </linearGradient>
+
+    <linearGradient id="vert-fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.1" />
+    </linearGradient>
+
+    <mask id="grid-mask">
+      <rect width="1920" height="900" fill="url(#vert-fade)" />
+    </mask>
+  </defs>
+
+  <!-- 1. Deep Space Base Background -->
+  <rect width="1920" height="900" fill="url(#cyber-bg)" />
+
+  <!-- 2. Cyber Grid Matrix -->
+  <rect width="1920" height="900" fill="url(#cyber-grid)" mask="url(#grid-mask)" opacity="0.85" />
+
+  <!-- 3. Ambient Center High-Tech Radial Glow -->
+  <ellipse cx="960" cy="450" rx="720" ry="380" fill="url(#center-glow)" />
+
+  <!-- 4. Perspective Digital Horizon / Vector Grid Lines -->
+  <g stroke="#1e40af" stroke-width="0.8" opacity="0.35">
+    <line x1="0" y1="450" x2="1920" y2="450" stroke-dasharray="8 6" />
+    <line x1="0" y1="620" x2="1920" y2="620" stroke-opacity="0.5" />
+    <line x1="0" y1="760" x2="1920" y2="760" stroke-opacity="0.7" stroke-width="1.2" />
+    <line x1="0" y1="860" x2="1920" y2="860" stroke-opacity="0.9" stroke-width="1.5" />
+
+    <!-- Floor Perspective Converging Rays -->
+    <line x1="960" y1="450" x2="100" y2="900" stroke-opacity="0.4" />
+    <line x1="960" y1="450" x2="350" y2="900" stroke-opacity="0.4" />
+    <line x1="960" y1="450" x2="650" y2="900" stroke-opacity="0.4" />
+    <line x1="960" y1="450" x2="960" y2="900" stroke-opacity="0.4" />
+    <line x1="960" y1="450" x2="1270" y2="900" stroke-opacity="0.4" />
+    <line x1="960" y1="450" x2="1570" y2="900" stroke-opacity="0.4" />
+    <line x1="960" y1="450" x2="1820" y2="900" stroke-opacity="0.4" />
+  </g>
+
+  <!-- 5. Network Constellation - LEFT WING (IT / Router / Topology Mesh) -->
+  <g id="left-network-cluster">
+    <!-- Network Links -->
+    <g stroke="url(#link-grad-left)" stroke-width="1.4" opacity="0.75">
+      <line x1="70" y1="180" x2="180" y2="280" />
+      <line x1="180" y1="280" x2="320" y2="190" />
+      <line x1="180" y1="280" x2="260" y2="420" />
+      <line x1="320" y1="190" x2="460" y2="280" />
+      <line x1="260" y1="420" x2="460" y2="280" />
+      <line x1="260" y1="420" x2="190" y2="580" />
+      <line x1="260" y1="420" x2="390" y2="540" />
+      <line x1="460" y1="280" x2="620" y2="380" />
+      <line x1="390" y1="540" x2="560" y2="620" />
+      <line x1="460" y1="280" x2="560" y2="180" />
+      <line x1="560" y1="180" x2="720" y2="240" />
+      <line x1="620" y1="380" x2="720" y2="240" />
+      <line x1="390" y1="540" x2="620" y2="380" />
+      <line x1="190" y1="580" x2="310" y2="720" />
+      <line x1="310" y1="720" x2="490" y2="750" />
+      <line x1="490" y1="750" x2="560" y2="620" />
+      <line x1="70" y1="180" x2="210" y2="110" />
+      <line x1="210" y1="110" x2="320" y2="190" />
+      <line x1="320" y1="190" x2="440" y2="90" />
+      <line x1="440" y1="90" x2="560" y2="180" />
+    </g>
+
+    <!-- Fiber / Data Pulse dashed lines -->
+    <g stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="6 14" opacity="0.65">
+      <line x1="70" y1="180" x2="460" y2="280" />
+      <line x1="260" y1="420" x2="620" y2="380" />
+      <line x1="180" y1="280" x2="390" y2="540" />
+      <line x1="440" y1="90" x2="720" y2="240" />
+      <line x1="310" y1="720" x2="560" y2="620" />
+    </g>
+
+    <!-- Outer Pulsing Rings on Key Hub Nodes -->
+    <circle cx="260" cy="420" r="18" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.35">
+      <animate attributeName="r" values="12;26;12" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="460" cy="280" r="22" fill="none" stroke="#3b82f6" stroke-width="1.2" opacity="0.4">
+      <animate attributeName="r" values="16;32;16" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.5;0.05;0.5" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="390" cy="540" r="16" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.35">
+      <animate attributeName="r" values="10;22;10" dur="3.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Node Points (Core switches, routers, servers) -->
+    <g fill="#081326" stroke-width="2">
+      <!-- Major Core Nodes -->
+      <circle cx="260" cy="420" r="8" stroke="#38bdf8" filter="url(#glow-cyan)" />
+      <circle cx="460" cy="280" r="9" stroke="#60a5fa" filter="url(#glow-blue)" />
+      <circle cx="390" cy="540" r="7.5" stroke="#38bdf8" filter="url(#glow-cyan)" />
+      <circle cx="620" cy="380" r="7" stroke="#818cf8" filter="url(#glow-blue)" />
+      <circle cx="320" cy="190" r="6.5" stroke="#38bdf8" />
+      <circle cx="560" cy="180" r="6" stroke="#60a5fa" />
+      <circle cx="720" cy="240" r="5" stroke="#38bdf8" />
+      <circle cx="560" cy="620" r="6" stroke="#38bdf8" />
+      
+      <!-- Sub / Edge Nodes -->
+      <circle cx="70" cy="180" r="4.5" stroke="#0ea5e9" fill="#38bdf8" />
+      <circle cx="180" cy="280" r="5" stroke="#3b82f6" fill="#60a5fa" />
+      <circle cx="190" cy="580" r="4.5" stroke="#06b6d4" fill="#67e8f9" />
+      <circle cx="310" cy="720" r="4" stroke="#38bdf8" fill="#38bdf8" />
+      <circle cx="490" cy="750" r="4" stroke="#60a5fa" fill="#60a5fa" />
+      <circle cx="210" cy="110" r="4" stroke="#0ea5e9" fill="#0ea5e9" />
+      <circle cx="440" cy="90" r="4.5" stroke="#3b82f6" fill="#93c5fd" />
+    </g>
+
+    <!-- Node Inner LED Centers -->
+    <g fill="#ffffff">
+      <circle cx="260" cy="420" r="3" />
+      <circle cx="460" cy="280" r="3.5" />
+      <circle cx="390" cy="540" r="2.5" />
+      <circle cx="620" cy="380" r="2.5" />
+      <circle cx="320" cy="190" r="2" />
+      <circle cx="560" cy="180" r="2" />
+    </g>
+  </g>
+
+  <!-- 6. Network Constellation - RIGHT WING (IT / Router / Cloud / Global Mesh) -->
+  <g id="right-network-cluster">
+    <!-- Network Links -->
+    <g stroke="url(#link-grad-right)" stroke-width="1.4" opacity="0.75">
+      <line x1="1850" y1="180" x2="1740" y2="280" />
+      <line x1="1740" y1="280" x2="1600" y2="190" />
+      <line x1="1740" y1="280" x2="1660" y2="420" />
+      <line x1="1600" y1="190" x2="1460" y2="280" />
+      <line x1="1660" y1="420" x2="1460" y2="280" />
+      <line x1="1660" y1="420" x2="1730" y2="580" />
+      <line x1="1660" y1="420" x2="1530" y2="540" />
+      <line x1="1460" y1="280" x2="1300" y2="380" />
+      <line x1="1530" y1="540" x2="1360" y2="620" />
+      <line x1="1460" y1="280" x2="1360" y2="180" />
+      <line x1="1360" y1="180" x2="1200" y2="240" />
+      <line x1="1300" y1="380" x2="1200" y2="240" />
+      <line x1="1530" y1="540" x2="1300" y2="380" />
+      <line x1="1730" y1="580" x2="1610" y2="720" />
+      <line x1="1610" y1="720" x2="1430" y2="750" />
+      <line x1="1430" y1="750" x2="1360" y2="620" />
+      <line x1="1850" y1="180" x2="1710" y2="110" />
+      <line x1="1710" y1="110" x2="1600" y2="190" />
+      <line x1="1600" y1="190" x2="1480" y2="90" />
+      <line x1="1480" y1="90" x2="1360" y2="180" />
+    </g>
+
+    <!-- Fiber / Data Pulse dashed lines -->
+    <g stroke="#38bdf8" stroke-width="1.8" stroke-dasharray="6 14" opacity="0.65">
+      <line x1="1850" y1="180" x2="1460" y2="280" />
+      <line x1="1660" y1="420" x2="1300" y2="380" />
+      <line x1="1740" y1="280" x2="1530" y2="540" />
+      <line x1="1480" y1="90" x2="1200" y2="240" />
+      <line x1="1610" y1="720" x2="1360" y2="620" />
+    </g>
+
+    <!-- Outer Pulsing Rings on Key Hub Nodes -->
+    <circle cx="1660" cy="420" r="18" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.35">
+      <animate attributeName="r" values="12;26;12" dur="4.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1460" cy="280" r="22" fill="none" stroke="#3b82f6" stroke-width="1.2" opacity="0.4">
+      <animate attributeName="r" values="16;32;16" dur="5.3s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.5;0.05;0.5" dur="5.3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1530" cy="540" r="16" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.35">
+      <animate attributeName="r" values="10;22;10" dur="3.8s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.8s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Node Points (Core switches, routers, servers) -->
+    <g fill="#081326" stroke-width="2">
+      <!-- Major Core Nodes -->
+      <circle cx="1660" cy="420" r="8" stroke="#38bdf8" filter="url(#glow-cyan)" />
+      <circle cx="1460" cy="280" r="9" stroke="#60a5fa" filter="url(#glow-blue)" />
+      <circle cx="1530" cy="540" r="7.5" stroke="#38bdf8" filter="url(#glow-cyan)" />
+      <circle cx="1300" cy="380" r="7" stroke="#818cf8" filter="url(#glow-blue)" />
+      <circle cx="1600" cy="190" r="6.5" stroke="#38bdf8" />
+      <circle cx="1360" cy="180" r="6" stroke="#60a5fa" />
+      <circle cx="1200" cy="240" r="5" stroke="#38bdf8" />
+      <circle cx="1360" cy="620" r="6" stroke="#38bdf8" />
+      
+      <!-- Sub / Edge Nodes -->
+      <circle cx="1850" cy="180" r="4.5" stroke="#0ea5e9" fill="#38bdf8" />
+      <circle cx="1740" cy="280" r="5" stroke="#3b82f6" fill="#60a5fa" />
+      <circle cx="1730" cy="580" r="4.5" stroke="#06b6d4" fill="#67e8f9" />
+      <circle cx="1610" cy="720" r="4" stroke="#38bdf8" fill="#38bdf8" />
+      <circle cx="1430" cy="750" r="4" stroke="#60a5fa" fill="#60a5fa" />
+      <circle cx="1710" cy="110" r="4" stroke="#0ea5e9" fill="#0ea5e9" />
+      <circle cx="1480" cy="90" r="4.5" stroke="#3b82f6" fill="#93c5fd" />
+    </g>
+
+    <!-- Node Inner LED Centers -->
+    <g fill="#ffffff">
+      <circle cx="1660" cy="420" r="3" />
+      <circle cx="1460" cy="280" r="3.5" />
+      <circle cx="1530" cy="540" r="2.5" />
+      <circle cx="1300" cy="380" r="2.5" />
+      <circle cx="1600" cy="190" r="2" />
+      <circle cx="1360" cy="180" r="2" />
+    </g>
+  </g>
+
+  <!-- 7. Center Cyber Crosshair / Data Link subtle bridges -->
+  <g stroke="#0ea5e9" stroke-width="0.8" opacity="0.25" stroke-dasharray="4 8">
+    <line x1="720" y1="240" x2="1200" y2="240" />
+    <line x1="620" y1="380" x2="1300" y2="380" />
+    <line x1="560" y1="620" x2="1360" y2="620" />
+  </g>
+
+  <!-- High-tech Floating Binary / Hex / Network Subtext accents -->
+  <g fill="#38bdf8" opacity="0.2" font-family="monospace" font-size="11" letter-spacing="2">
+    <text x="120" y="80">TCP/IP // BGP_ROUTING // VLAN:10</text>
+    <text x="120" y="840">SYS_ADMIN: STATUS_OK // 10.0.0.0/8</text>
+    <text x="1560" y="80">NETWORK_OPS // CORE_GATEWAY</text>
+    <text x="1560" y="840">0x7F000001 // SECURE_SOCKET</text>
+  </g>
+</svg>
