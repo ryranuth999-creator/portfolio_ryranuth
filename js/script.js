@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const revealItems = document.querySelectorAll(".reveal");
   const sections = document.querySelectorAll("main section[id]");
   const typingText = document.getElementById("typingText");
-  const downloadCv = document.getElementById("downloadCv");
 
   // Footer dynamic year
   const yearElement = document.getElementById("year");
@@ -131,14 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scrollTopButton.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
-  // Download CV notice handler
-  if (downloadCv) {
-    downloadCv.addEventListener("click", (event) => {
-      event.preventDefault();
-      alert("Please place your updated CV file in the assets directory to enable direct download.");
     });
   }
 
